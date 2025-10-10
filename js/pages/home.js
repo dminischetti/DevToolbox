@@ -140,7 +140,7 @@ export default function renderHome() {
       <div class="shell hero__inner">
         <div class="hero-card">
           <p class="hero-eyebrow">Calm, powerful developer instruments</p>
-          <h2 class="hero-title">DevToolbox is a glassmorphic lab for curious builders.</h2>
+          <h2 class="hero-title">DevToolbox is a lab for curious builders.</h2>
           <p class="hero-copy">${APP_META.mission}</p>
           <div class="hero-actions">
             <a class="btn" href="#/tools">Launch the toolbox</a>
