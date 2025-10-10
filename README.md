@@ -1,8 +1,8 @@
-# DevToolbox v2 — A Developer’s Personal Lab
+# DevToolbox — A Developer’s Personal Lab
 
 > Thoughtful Tools. Beautifully Engineered.
 
-DevToolbox v2 is a static, offline-friendly toolbox that treats engineering craft as a design discipline. Fourteen micro-apps share a cohesive shell, unified interactions, and documented intent. Every module runs locally — no telemetry, no server calls.
+DevToolbox is a static, offline-friendly toolbox that treats engineering craft as a design discipline. Fourteen micro-apps share a cohesive shell, unified interactions, and documented intent. Every module runs locally — no telemetry, no server calls.
 
 ![Hero preview](./assets/cover.svg)
 

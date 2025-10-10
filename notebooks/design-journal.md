@@ -1,4 +1,4 @@
-# DevToolbox v2 · Design Journal
+# DevToolbox · Design Journal
 
 ## Early Sketches & Goals
 - Map the toolbox as a constellation: hero, cards, tool shells, case study.
@@ -23,4 +23,4 @@
 - [x] Live region for copy toast to announce feedback.
 
 ## Reflection
-DevToolbox v2 demonstrates that developer tooling can feel like a boutique experience. Engineering rigour and design taste are not competing forces — they’re partners. Each interaction, from copy toast to diff summary, communicates respect for the person using it. The lab is my proof that developers deserve tools that are as thoughtful as the products they build.
+DevToolbox demonstrates that developer tooling can feel like a boutique experience. Engineering rigour and design taste are not competing forces — they’re partners. Each interaction, from copy toast to diff summary, communicates respect for the person using it. The lab is my proof that developers deserve tools that are as thoughtful as the products they build.

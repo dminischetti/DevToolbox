@@ -181,7 +181,7 @@ export function getFavorites() {
 }
 
 export const APP_META = {
-  name: 'DevToolbox v2 — A Developer’s Personal Lab',
+  name: 'DevToolbox — A Developer’s Personal Lab',
   tagline: 'Thoughtful Tools. Beautifully Engineered.',
   mission:
     'Merge precision engineering and aesthetic design into a cohesive, static, privacy-friendly toolbox for developers — and document every decision as a case study.'

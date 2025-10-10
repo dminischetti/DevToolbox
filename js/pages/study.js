@@ -6,7 +6,7 @@ export default function renderStudy() {
       <section class="space-y-6">
         <p class="text-sm uppercase tracking-[0.35em] text-indigo-200/70">Case Study</p>
         <h2 class="text-4xl font-semibold">Executive Summary</h2>
-        <p class="text-lg text-indigo-100/85 leading-relaxed max-w-3xl">DevToolbox v2 exists to prove that a static site can feel luxurious. It merges precision engineering, privacy-by-design principles, and tactile design patterns into a single toolbox that respects developers and their craft.</p>
+        <p class="text-lg text-indigo-100/85 leading-relaxed max-w-3xl">DevToolbox exists to prove that a static site can feel luxurious. It merges precision engineering, privacy-by-design principles, and tactile design patterns into a single toolbox that respects developers and their craft.</p>
         <div class="glass-panel p-8 grid gap-6 md:grid-cols-2">
           <div>
             <h3 class="text-xl font-semibold">Mission</h3>
@@ -137,7 +137,7 @@ export default function renderStudy() {
 
       <section class="space-y-6 text-center">
         <blockquote class="text-2xl font-semibold text-indigo-100/90">“Every small tool hides a big idea. — Dominic Minischetti”</blockquote>
-        <p class="text-sm opacity-80">Crafted with care by Dominic Minischetti · <a class="underline" href="https://dominic.design" target="_blank" rel="noopener">dominic.design</a> · <a class="underline" href="mailto:dominic@design.dev">dominic@design.dev</a></p>
+        <p class="text-sm opacity-80">Crafted with care by Dominic Minischetti · <a class="underline" href="https://minischetti.org" target="_blank" rel="noopener">minischetti.org</a> · <a class="underline" href="mailto:dominic.minischetti@gmail.com">dominic.minischetti@gmail.com</a></p>
       </section>
     </article>
   `;
