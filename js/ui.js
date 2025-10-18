@@ -142,9 +142,11 @@ export function registerGlobalEvents(onThemeToggle, onHelp) {
     }
     if (event.target.closest('#nav-backdrop')) {
       setNavState(false);
+      document.body.classList.remove('drawer-open');
     }
     if (event.target.closest('[data-nav-link]')) {
       setNavState(false);
+      document.body.classList.remove('drawer-open');
     }
     const backButton = event.target.closest('[data-tool-back]');
     if (backButton) {
@@ -176,6 +178,12 @@ export function registerGlobalEvents(onThemeToggle, onHelp) {
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
       setNavState(false);
+      const workspaceToggle = document.querySelector('[data-panel-toggle="workspace"]');
+      if (workspaceToggle) {
+        workspaceToggle.click();
+      } else {
+        document.body.classList.remove('drawer-open');
+      }
     }
   });
 }

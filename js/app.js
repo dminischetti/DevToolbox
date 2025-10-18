@@ -38,8 +38,19 @@ window.addEventListener('online', () => offlineBanner(false));
 window.addEventListener('offline', () => offlineBanner(true));
 offlineBanner(!navigator.onLine);
 
-updateNavState(window.location.hash || '#/');
-window.addEventListener('hashchange', () => updateNavState(window.location.hash || '#/'));
+const syncNavState = () => {
+  updateNavState(window.location.hash || '#/');
+  document.body.classList.remove('drawer-open');
+  if (!String(window.location.hash || '').startsWith('#/tools/')) {
+    if (window.devtoolboxPanelResize) {
+      window.removeEventListener('resize', window.devtoolboxPanelResize);
+      window.devtoolboxPanelResize = null;
+    }
+  }
+};
+
+syncNavState();
+window.addEventListener('hashchange', syncNavState);
 
 document.addEventListener('DOMContentLoaded', () => {
   const theme = getTheme();
