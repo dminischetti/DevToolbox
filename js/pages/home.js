@@ -96,7 +96,7 @@ const PREVIEW_CONTENT = {
     ],
     input: {
       language: 'language-javascript',
-      code: `await digest('SHA-256', 'glassmorphic lab');`
+      code: `await digest('SHA-256', 'minimalist lab');`
     },
     output: {
       language: 'language-javascript',
@@ -155,7 +155,7 @@ export default function renderHome() {
         <div class="highlight-grid" aria-label="Highlights">
           <div class="highlight-card">
             <strong>14 handcrafted tools</strong>
-            <span>Regex, JWTs, SQL, Markdown, and more — all unified by a glassy UI language.</span>
+            <span>Regex, JWTs, SQL, Markdown, and more — all unified by a calm, consistent interface.</span>
           </div>
           <div class="highlight-card">
             <strong>Responsive &amp; inclusive</strong>
@@ -256,7 +256,7 @@ export default function renderHome() {
           <div class="architecture-graph">
             <div class="architecture-node">
               <strong>UI Shell</strong>
-              <span>Glassmorphic layout, responsive grid, and persistent navigation.</span>
+              <span>Minimal surfaces, responsive grid, and persistent navigation.</span>
             </div>
             <div class="architecture-node">
               <strong>Router &amp; State</strong>
@@ -291,10 +291,10 @@ export default function renderHome() {
               .join('')}
           </div>
           <div class="tab-panel" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview" aria-hidden="false">
-            <p>DevToolbox is a static, offline-ready lab of developer utilities. Each tool embraces the same interaction patterns: focus on the input, run with <kbd>⌘/Ctrl + Enter</kbd>, copy output instantly, and celebrate with subtle glow feedback.</p>
+            <p>DevToolbox is a static, offline-ready lab of developer utilities. Each tool embraces the same interaction patterns: focus on the input, run with <kbd>⌘/Ctrl + Enter</kbd>, copy output instantly, and confirm actions with a lightweight toast.</p>
             <ul>
               <li>Unified dark theme with high-contrast neutral grays.</li>
-              <li>Glass panels use <code>backdrop-filter</code> when available and gracefully degrade otherwise.</li>
+              <li>Cards rely on flat surfaces and subtle borders for clarity and speed.</li>
               <li>Motion respects <code>prefers-reduced-motion</code> and falls back to instant state changes.</li>
             </ul>
           </div>

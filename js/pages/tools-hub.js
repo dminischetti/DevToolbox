@@ -16,7 +16,7 @@ export default function renderToolsHub() {
           <div class="tool-hub__meta">
             <p class="section-heading__label">Tool console</p>
             <h2 class="section-heading__title" id="tools-hub-title">Command centre for every utility</h2>
-            <p class="hero-copy">Search, favourite, and launch fourteen hand-tuned developer instruments. Every card carries the same glassy language for muscle-memory bliss.</p>
+            <p class="hero-copy">Search, favourite, and launch fourteen hand-tuned developer instruments. Every card follows the same calm language for muscle-memory bliss.</p>
             <p class="hero-badge">Shortcuts: <kbd>/</kbd> search · <kbd>⌘/Ctrl + Enter</kbd> run · <kbd>Esc</kbd> clear</p>
           </div>
           <div class="tool-hub__search">
@@ -41,8 +41,7 @@ function attachInteractions(tools) {
     grid.innerHTML = filtered
       .map(
         (tool) => `
-          <article class="tool-card card-tilt" role="listitem">
-            <div class="card-inner">
+          <article class="tool-card" role="listitem">
               <div class="tool-card__header">
                 <span class="tool-card__icon" aria-hidden="true">
                   <img src="${tool.icon}" alt="" />
@@ -58,7 +57,6 @@ function attachInteractions(tools) {
                 ${favoriteButton(tool.slug)}
               </div>
               <div class="tool-card__footer">${tool.tip}</div>
-            </div>
           </article>
         `
       )

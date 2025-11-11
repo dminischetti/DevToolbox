@@ -85,10 +85,10 @@ export function showToast(message = 'Copied ✓') {
   const toast = document.getElementById('copy-toast');
   if (!toast) return;
   toast.textContent = message;
-  toast.classList.add('visible', 'toast-pop');
+  toast.classList.add('visible');
   clearTimeout(toastTimeout);
   toastTimeout = setTimeout(() => {
-    toast.classList.remove('visible', 'toast-pop');
+    toast.classList.remove('visible');
   }, 2200);
 }
 

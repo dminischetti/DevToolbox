@@ -2,18 +2,9 @@ import { favoriteButton } from '../ui.js';
 
 export function toolPage(tool, { workspace, output, actions, notes }) {
   setTimeout(() => {
-    const runBtn = document.querySelector('[data-run]');
-    const clearBtn = document.querySelector('[data-clear]');
     const container = document.querySelector('[data-panel-container]');
     const toggles = Array.from(document.querySelectorAll('[data-panel-toggle]'));
     const backdrop = document.querySelector('[data-panel-backdrop]');
-    const pulse = (button) => {
-      button.classList.remove('animate-pulse');
-      void button.offsetWidth;
-      button.classList.add('animate-pulse');
-    };
-    if (runBtn) runBtn.addEventListener('click', () => pulse(runBtn));
-    if (clearBtn) clearBtn.addEventListener('click', () => pulse(clearBtn));
 
     const activatePanel = (panel) => {
       if (!container) return;

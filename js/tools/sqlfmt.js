@@ -34,8 +34,6 @@ function init() {
   const format = () => {
     const formatted = formatSql(input.value);
     output.textContent = formatted;
-    output.classList.add('animate-[pulseGlow_1.2s_ease]');
-    setTimeout(() => output.classList.remove('animate-[pulseGlow_1.2s_ease]'), 1200);
   };
 
   const clear = () => {

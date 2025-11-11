@@ -56,8 +56,6 @@ function init() {
     output.textContent = hex;
     base64El.textContent = btoa(String.fromCharCode(...bytes));
     entropyEl.textContent = `${algo.value} digest length ${bytes.length * 8} bits.`;
-    output.classList.add('animate-[pulseGlow_1.6s_ease]');
-    setTimeout(() => output.classList.remove('animate-[pulseGlow_1.6s_ease]'), 1600);
   };
 
   const clear = () => {

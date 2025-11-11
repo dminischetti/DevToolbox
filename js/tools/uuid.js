@@ -21,7 +21,7 @@ export default function renderUuid(tool) {
         <p id="uuid-insight">Each UUID has 122 bits of randomness. After generating millions, collisions remain astronomically unlikely.</p>
       </div>
     `,
-    notes: 'UUID Generator uses secure crypto to stream IDs, highlighting the newest entry with a glow.'
+    notes: 'UUID Generator uses secure crypto to stream IDs, keeping the newest entry pinned for easy copying.'
   });
 }
 
@@ -33,7 +33,7 @@ function init() {
     const uuid = crypto.randomUUID();
     const entry = document.createElement('div');
     entry.textContent = uuid;
-    entry.className = 'px-3 py-2 rounded bg-black/30 border border-zinc-500/20 animate-[pulseGlow_1.2s_ease]';
+    entry.className = 'px-3 py-2 rounded border border-zinc-700 bg-[#11161d]';
     stream.prepend(entry);
     while (stream.children.length > 5) {
       stream.removeChild(stream.lastChild);

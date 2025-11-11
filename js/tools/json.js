@@ -60,8 +60,6 @@ function init() {
       output.textContent = formatted;
       status.textContent = 'JSON looks healthy ✓';
       status.className = 'text-sm text-zinc-300 font-medium';
-      output.classList.add('animate-[pulseGlow_1.6s_ease]');
-      setTimeout(() => output.classList.remove('animate-[pulseGlow_1.6s_ease]'), 1600);
     } catch (error) {
       const { message } = handleError('json:format', error, {
         userMessage: 'Invalid JSON. Check for missing commas or quotes and try again.'
